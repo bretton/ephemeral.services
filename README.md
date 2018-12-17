@@ -1,5 +1,5 @@
 # ephemeral.services
-This is the operational handbook for "ephemeral internet services", a fictional entity providing anonymous security services for LN payments.
+This is the operational handbook for [ephemeral.services](https://ephemeral.services/), a fictional entity providing anonymous security services for LN payments.
 
 ## Table of Contents
 
