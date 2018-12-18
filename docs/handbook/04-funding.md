@@ -40,23 +40,47 @@ Perhaps ten bech32 funding transactions could be batched for lower fees?
 
 Alternatively, you may be looking at 0.00022130 BTC in fees to fund ten (10) bech32 inputs for your LN node to be able to open 10 channels at once. 
 
-recap:
+To recap:
 
-exchange to bitcoind: 0.00007232 BTC PLUS
-bitcoind to ln node ten times: 0.00022130 BTC
-channel opening fee 1% capacity ten times: 0.00027870 BTC
+* exchange to bitcoind: 0.00007232 BTC 
+* plus bitcoind to ln node batched/ten times: 0.00002213 to 0.00022130 BTC
+* plus channel opening fee 1% capacity times ten for total of: 0.00027870 BTC
 
-Total fees for ten ~$100 channels after two funding rounds from legacy to bitcoind to bech32 on LN node is likely around 0.00057232 BTC, or $2.00 at current prices, without batching. 
+Total fees for ten ~$100 channels after two funding rounds from legacy to bitcoind to bech32 on LN node is likely up to 0.00057232 BTC, or $2.00, at current prices, without batching. With batching it may be considerably less.
 
 As long as fees are low, this is a feasible approach. However if fees rise 10x, or 150x, re-evaluation may be needed.
 
+
+## LN Node Funding Script
 To-do:
 * review https://en.bitcoin.it/wiki/Techniques_to_reduce_transaction_fees
 * build a script to fund 10 LN bech32 wallet addresses in a single batched transaction, by obtaining 10 addresses, calculating 1/10th balances to send, and sending in a single transaction
 
+Pseudocode:
+```
+# send funds to your bitcoin node. then fund your LN node with this tool
+echo blurb about this tool with warnings and confirmations required to run
+
+# we want to fund 3 nodes with 0.33btc each, where 0.33btc is split to 10 addresses on each node
+check: if bitcoind balance is > 0.33 btc; else exit
+create: change address on bitcoind node
+
+# get a list of addresses from LN node
+gRPC/shell query looped 10x, with each bech32 address becoming an item in an array
+
+# compute
+split 0.33 into 10 amounts plus batch fee
+send the computed value to each of the address in the previous array as a single batched transaction
+send any change to change address computed earlier in script
+```
+
+Run this script 3 times. Or perhaps script can fund 3 nodes at once?
+
 ## How long does it take?
 
-It can take anything from 30 to 360 minutes to fund your node in the fashion outlined in this document. 
+It can take anything from 30 to 360 minutes to fund your node in a manual fashion outlined in this document. 
+
+It might only take 20mins with the correct scripting to get 10 inputs you can spend collectively, then wait another 30 minutes to be live on the LN with 10 active channels. This might be worth it, compared to several hours of sequential channel opening. 
 
 ## Outgoing Channels
 
