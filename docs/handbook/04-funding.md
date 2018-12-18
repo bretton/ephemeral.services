@@ -70,6 +70,7 @@ gRPC/shell query looped 10x, with each bech32 address becoming an item in an arr
 
 # compute
 split 0.33 into 10 amounts plus batch fee
+# https://bitcoin.org/en/developer-reference#sendmany
 send the computed value to each of the address in the previous array as a single batched transaction
 send any change to change address computed earlier in script
 ```
