@@ -69,7 +69,7 @@ create: change address on bitcoind node
 gRPC/shell query looped 10x, with each bech32 address becoming an item in an array
 
 # compute
-split 0.33 into 10 amounts plus batch fee
+split 0.33 into 10 amounts plus batch fee (avg fee + 60 bytes)
 # https://bitcoin.org/en/developer-reference#sendmany
 send the computed value to each of the address in the previous array as a single batched transaction
 send any change to change address computed earlier in script
