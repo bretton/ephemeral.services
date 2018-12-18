@@ -45,10 +45,14 @@ recap:
 exchange to bitcoind: 0.00007232 BTC PLUS
 bitcoind to ln node ten times: 0.00022130 BTC
 channel opening fee 1% capacity ten times: 0.00027870 BTC
-----------------------
+
 Total fees for ten ~$100 channels after two funding rounds from legacy to bitcoind to bech32 on LN node is likely around 0.00057232 BTC, or $2.00 at current prices, without batching. 
 
 As long as fees are low, this is a feasible approach. However if fees rise 10x, or 150x, re-evaluation may be needed.
+
+To-do:
+* review https://en.bitcoin.it/wiki/Techniques_to_reduce_transaction_fees
+* build a script to fund 10 LN bech32 wallet addresses in a single batched transaction, by obtaining 10 addresses, calculating 1/10th balances to send, and sending in a single transaction
 
 ## How long does it take?
 
