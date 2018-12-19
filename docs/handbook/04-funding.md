@@ -14,7 +14,7 @@ We want to ensure our node is funded on bech32 addy, or with `lnd` known as `lnc
 
 We also want to ensure multiple inputs, so several funding transactions, in order to open multiple channels simultaneously. 
 
-This means funding n bech32 addresses with 0.3 btc ($1000 @ 2018-12-18 prices) split into 0.03 transaction sizes. 
+This means funding ten bech32 addresses with 0.3 btc ($1000 @ 2018-12-18 prices) split into 0.03 transaction sizes. 
 
 ## Funding bitcoind, then bech32
 
