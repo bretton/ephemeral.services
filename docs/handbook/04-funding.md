@@ -73,7 +73,9 @@ If your transaction had 7 inputs and 1 output it would be like this:
 
 So if we fund our bitcoin node with 0.33 bitcoin in a single transaction, then fund the LN node via batch transaction to 10 outputs, it would cost:
 
+```
 (1*180)+(10*34)+10+7 = 180+340+17 = 537 bytes.
+```
 
 sats/byte | transaction fee
 ------ | ------
