@@ -37,3 +37,9 @@ To-do: Retrieval of information and input into [Splunk](https://www.splunk.com)
 Periodically query the lnd daemon for stats, then ship it off to Splunk 
 
 [Splunk: get-lnd-stats](https://gist.github.com/tyzbit/0d5e54f7f560a043675963c3e7517550)
+
+## Bash to CSV
+
+The following early guides for monitoring in Bash to CSV files may be useful to expand on.
+* [monitor lnd wallet and channel balances](https://gist.github.com/bretton/3248f76e89cc1579da8ce98dab0f8e92)
+* [improved monitor for lnd wallet and channel balances and more](https://gist.github.com/tyzbit/ee3d07ec5a1c80379dcb2d9ec24c54f5)
