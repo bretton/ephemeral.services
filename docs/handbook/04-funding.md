@@ -81,10 +81,17 @@ create: change address on bitcoind node
 # get a list of addresses from LN node
 gRPC/shell query looped 10x, with each bech32 address becoming an item in an array
 
+# get the current median fee, and add to it for faster confirmations
+query: https://bitcoinfees.earn.com/api for fastestfee
+set: extra = +5%
+calculate: fastestfee+extra = ourfee
+
 # compute
-split 0.33 into 10 amounts plus batch fee (avg fee + 60 bytes)
+split 0.33 into (10 amounts) plus (batch fee from ourfee) [290 bytes @ fast tx fee with extra]
+set perchannel = (bitcoind-balance - batch fee)/10
+
 # https://bitcoin.org/en/developer-reference#sendmany
-send the computed value to each of the address in the previous array as a single batched transaction
+send the computed value perchannel to each of the address in the previous array as a single batched transaction
 send any change to change address computed earlier in script
 ```
 
