@@ -50,6 +50,18 @@ Total fees for ten ~$100 channels after two funding rounds from legacy to bitcoi
 
 As long as fees are low, this is a feasible approach. However if fees rise 10x, or 150x, re-evaluation may be needed.
 
+### More detail on batched transaction fees
+
+The average transaction size is 226 bytes + 60 bytes overhead for batched transactions + 4 bytes error-margin rounding = 290 bytes for a batched transaction.
+
+i.e. a batched transaction of 10 transactions should not be larger than 290 bytes in theory
+
+At the current fee rate of 20 sats/byte, work out to a fee of 5800 sats for the batched transaction. 
+
+We can force higher fees to ensure faster confirmations, simply by doubling low fees amounts, for example any regular fee under 80 sats/byte could easily be replaced by paying 100 sats/byte for a batch transaction fee of 29000 sats, or 0.00029000, or around $1 at current Bitcoin prices, and still be affordable relative to the total sum.
+
+10 x $100 channels, for $1000 outgoing capacity, funded for $1? The following demonstrates the feasibility of this:
+To-do: add a sample batched transaction with fee calcs verifiable on an explorer
 
 ## LN Node Funding Script
 To-do:
