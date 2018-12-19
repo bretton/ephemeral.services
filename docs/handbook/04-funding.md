@@ -26,9 +26,11 @@ You can do a single funding transaction to bitcoind, and 10 funding transactions
 
 We have a known potential fee range for a regular sized transaction of:
 
-Low     0.00001350 BTC
-Normal: 0.00007232 BTC (5 times higher)
-High:   0.00204945 BTC (150 times higher)
+Tier       | Values
+---------- | ----------
+Low      | 0.00001350 BTC
+Normal | 0.00007232 BTC (5 times higher)
+High     | 0.00204945 BTC (150 times higher)
 
 Each bitcoind funding transaction to a normal pre-segwit address can cost 0.00001350 to 0.00204945 BTC.
 
