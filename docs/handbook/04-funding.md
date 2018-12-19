@@ -76,7 +76,7 @@ So if we fund our bitcoin node with 0.33 bitcoin in a single transaction, then f
 (1*180)+(10*34)+10+7 = 180+340+17 = 537 bytes.
 
 sats/byte | transaction fee
------- + ------
+------ | ------
 10  | 5370 satoshis
 20  | 10740 satoshis
 50  | 26850 satoshis
