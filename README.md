@@ -24,6 +24,7 @@ This is the operational handbook for [ephemeral.services](https://ephemeral.serv
 /docs/handbook/13-tor.md
 /docs/handbook/14-monitoring.md
 /docs/handbook/15-channel-rebalancing.md
+/docs/handbook/16-wireshark-analysis.md
 /docs/howto/
 /docs/styleguide/
 ```
