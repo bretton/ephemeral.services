@@ -108,11 +108,11 @@ gRPC/shell query looped 10x, with each bech32 address becoming an item in an arr
 
 # get the current median fee, and add to it for faster confirmations
 query: https://bitcoinfees.earn.com/api for fastestfee
-set: extra = +5%
+optionally set: extra = +5%
 calculate: fastestfee+extra = ourfee
 
 # compute
-split 0.33 into (10 amounts) plus (batch fee from ourfee) [290 bytes @ fast tx fee with extra]
+split 0.33 into (10 amounts) plus (batch fee from ourfee) [537 bytes @ fast tx fee with optional extra for speedier confirmations]
 set perchannel = (bitcoind-balance - batch fee)/10
 
 # https://bitcoin.org/en/developer-reference#sendmany
