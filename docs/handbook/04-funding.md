@@ -56,13 +56,36 @@ As long as fees are low, this is a feasible approach. However if fees rise 10x, 
 
 The average transaction size is 226 bytes + 60 bytes overhead for batched transactions + 4 bytes error-margin rounding = 290 bytes for a batched transaction.
 
-i.e. a batched transaction of 10 transactions should not be larger than 290 bytes in theory
+However, from https://www.reddit.com/r/btc/comments/7pzzvz/calculate_the_bitcoin_transaction_fee/dslbsj7
+```
+Use this to figure out how many bytes your tx will be:
 
-At the current fee rate of 20 sats/byte, work out to a fee of 5800 sats for the batched transaction. 
+(# of inputs)x180 + (# of outputs)x34 + 10 (+/- # of inputs) = total bytes
 
-We can force higher fees to ensure faster confirmations, simply by doubling low fees amounts, for example any regular fee under 80 sats/byte could easily be replaced by paying 100 sats/byte for a batch transaction fee of 29000 sats, or 0.00029000, or around $1 at current Bitcoin prices, and still be affordable relative to the total sum.
+EXP:
 
-10 x $100 channels, for $1000 outgoing capacity, funded for $1? The following demonstrates the feasibility of this:
+If your transaction had 7 inputs and 1 output it would be like this:
+
+7(times)180 + 1(times)34 + 10 + 7(for safe measure) = 1311 bytes
+
+510 satoshis * 1311 = .0066861 BTC tx fee ($90ish)
+```
+
+So if we fund our bitcoin node with 0.33 bitcoin in a single transaction, then fund the LN node via batch transaction to 10 outputs, it would cost:
+
+(1*180)+(10*34)+10+7 = 180+340+17 = 537 bytes.
+
+sats/byte | transaction fee
+------ + ------
+10  | 5370 satoshis
+20  | 10740 satoshis
+50  | 26850 satoshis
+100 | 53700 satoshis
+ATH | 805500 satoshis
+
+We can force higher fees to ensure faster confirmations, simply by doubling low fees amounts, for example any regular fee under 80 sats/byte could easily be replaced by paying 100 sats/byte for a batch transaction fee of 53700 sats, or 0.00053700, or around $2 at current Bitcoin prices, and still be affordable relative to the total sum being committed. 
+
+Conclusion: 10 x $100 channels, for $1000 outgoing capacity, funded for $2 is possible? Here's proof (to-do)
 
 To-do: add a sample batched transaction with fee calcs verifiable on an explorer
 
