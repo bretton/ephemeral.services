@@ -26,6 +26,8 @@ In the backend, a paid invoice triggers allocation and enablement of a user on a
 
 It's important to ensure we stay operational under all circumstances. This means having multiple nodes with good capacity, and failover mechanisms. 
 
+The entire billing and operational side of providing a VPN network must be 'bootable' and recoverable within an hour of take-down or denial-of-service attack. This includes funding routing nodes from a cold wallet store and ensuring outgoing capacity on the network.
+
 Support-desk queries can be 1 sat requests.
 
 We need a bird's eye view of the state of our nodes, networks, network providers.
