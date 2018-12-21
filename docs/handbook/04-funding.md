@@ -124,6 +124,10 @@ send any change to change address computed earlier in script
 
 Run this script 3 times. Or perhaps script can fund 3 nodes at once?
 
+### Visualised example
+
+![Funding Tree Detailed](https://raw.githubusercontent.com/bretton/ephemeral.services/master/docs/handbook/04-funding-tree-detailed.png "Funding Tree Detailed")
+
 ## How long does it take?
 
 It can take anything from 30 to 360 minutes to fund your node in a manual fashion outlined in this document. 
