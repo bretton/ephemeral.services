@@ -2,6 +2,12 @@
 
 To-do: needs massive expansion for all the scripts, several possibilities
 
+## Channel Management
+
+Reference:
+* [Alex Bosworth - Lightning channel Management](https://www.youtube.com/watch?v=HlPIB6jt6ww)
+
+
 ## Romperts Channel Rebalancer
 
 Some node operators have written their own channel rebalance scripts, like Romperts channel rebalancer
