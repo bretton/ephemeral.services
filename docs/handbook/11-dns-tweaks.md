@@ -64,7 +64,7 @@ Output
 ln<alphanumerics>
 ```
 
-We can now do this for our my lightning nodes and update DNS accordingly.
+We can now do this for our lightning nodes and update DNS accordingly.
 
 ### Useful
 Find your node at https://www.robtex.com/lightning/node/ and there is output to check what is expected from DNS, along with validation once it's setup.
