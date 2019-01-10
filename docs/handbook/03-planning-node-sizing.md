@@ -12,7 +12,7 @@ The average fee for a LN channel opening from a Bech32 address in December 2018 
 
 The minimum viable channel size is equal to (transaction fee 1% reserve of channel size + 1 sat)
 
-For our purposes, at current rates, $100 channel would cost 0.00002787 BTC to open/close, and require 0.03 btc, of which 1% of Z would be required for transaction fees.
+For our purposes, at current rates, $100 channel would cost 0.00002787 BTC to open/close, and require 0.03 btc, of which an additional 1% would be reserved for LN channel transaction fees (close).
 
 ## Ideal Channel Sizes
 
