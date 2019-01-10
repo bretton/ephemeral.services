@@ -18,9 +18,10 @@ For our purposes, at current rates, $100 channel would cost 0.00002787 BTC to op
 
 To-do: add more info on why $40-$100 channels are better?
 
-We want out connections to the network to be large to act as routing nodes.
-
-We want our direct customer connections to us be large'ish ($20-$50)
+We want our:
+* outgoing channels to be sensibly large, and act as routing nodes.($100+)
+* incoming connections to be large rather than small. ($75+)
+* direct customer channels to be large'ish ($20-$50)
 
 ### Wallet Users
 To-do: add info on wallet users opening channels to us, such as minimum incoming channel we will allow, which should be less than our outgoing channels?
