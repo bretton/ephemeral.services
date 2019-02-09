@@ -2,6 +2,8 @@
 
 According to [Alex Bosworth, to-do: source] it's better for routing nodes to have $40 to $100 channel sizes. This allows routing to be more effective, with fewer paths, than a network with too many tiny channels. 
 
+Additionally "If you want the range of your payments to be 0-$100, don’t create 10 $20 channels, instead create 1 $200 channel"
+
 Transaction fees also need to be factored in, and these can range from epic all time highs, to slight delays on a fuller mempool.
 
 ## Fee Considerations
