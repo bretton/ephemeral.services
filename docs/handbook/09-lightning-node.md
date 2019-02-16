@@ -11,7 +11,7 @@ sudo snap install --classic go
 
 On success you will see a result like:
 ```
-go 1.11.2 from Michael Hudson-Doyle (mwhudson) installed
+go 1.11.X from Michael Hudson-Doyle (mwhudson) installed
 ```
 
 Create a 'go' directory in your home directory:
@@ -49,14 +49,9 @@ And if you see output, `go` is setup correctly.
 
 ### Install build tools
 
-`lnd` is now using `dep` to manage dependancies, and `dep` has some additional requirements for development tools, so make sure you have the build-essential package installed:
+Make sure you have the build-essential package installed:
 ```
 apt-get install build-essential
-```
-
-Install `dep`:
-```
-go get -u github.com/golang/dep/cmd/dep
 ```
 
 ### Install LND
