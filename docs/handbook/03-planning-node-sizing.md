@@ -1,6 +1,10 @@
 # Determining node size/value
 
-According to [Alex Bosworth, to-do: source] it's better for routing nodes to have $40 to $100 channel sizes. This allows routing to be more effective, with fewer paths, than a network with too many tiny channels. 
+According to [Alex Bosworth, source: https://twitter.com/alexbosworth/status/1102643785748570113 ] it's better for routing nodes to have "0.5 to 1 BTC spread amongst 10 to 15 peers". 
+
+This allows routing to be more effective, with fewer paths, than a network with too many tiny channels. 
+
+(to-do update this section according to tweet thread)
 
 Additionally "If you want the range of your payments to be 0-$100, don’t create 10 $20 channels, instead create 1 $200 channel"
 
