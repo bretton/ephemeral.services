@@ -118,6 +118,7 @@ Create and edit $HOME/.lnd/lnd.conf from
 A very simple version might be as follows, you can add more from the info in the sample config later:
 ```
 [Application Options]
+unsafe-disconnect=1
 ; set external IP if not using NAT
 externalip=YOURIP
 ; set node alias (seen in explorers)
