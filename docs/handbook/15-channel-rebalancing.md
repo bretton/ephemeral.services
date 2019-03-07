@@ -98,3 +98,8 @@ Another project trying to assist with channel rebalancing is https://github.com/
 ## rebalance-lnd
 
 And another project: https://github.com/C-Otto/rebalance-lnd
+
+## Custodial Rebalancing
+
+* https://twitter.com/citlayik/status/1103066177943863298
+* https://kriptode.com/balnr/index.html
