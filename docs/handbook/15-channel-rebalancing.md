@@ -103,3 +103,7 @@ And another project: https://github.com/C-Otto/rebalance-lnd
 
 * https://twitter.com/citlayik/status/1103066177943863298
 * https://kriptode.com/balnr/index.html
+
+## General Tools with Rebalancing features
+
+Alex Bosworth has released [Balance of Satoshis](https://github.com/alexbosworth/balanceofsatoshis) which is a set of tools for working with Lightning balances.
