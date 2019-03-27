@@ -97,7 +97,21 @@ Another project trying to assist with channel rebalancing is https://github.com/
 
 ## rebalance-lnd
 
-And another project: https://github.com/C-Otto/rebalance-lnd
+And another project: [rebalance-lnd](https://github.com/C-Otto/rebalance-lnd) as the original author.
+
+[RadarTech rebalance-lnd](https://github.com/RadarTech/rebalance-lnd) adds improvements and documentation.
+```
+cleanup on the rebalance-lnd tool by C-Otto, including more detailed examples in the README, merging in improvements (and a move to lnd-grpc) from @pierre_rochard, fixing some things to pin to lnd-grpc v0.2.5, adding a --chain litecoin flag to scale the visual channel bars properly on LTC, and adding a Pipfile for pipenv users.
+```
+
+## lightning loop
+
+[Lightning Loop](https://github.com/lightninglabs/loop) is a non-custodial service offered by Lightning Labs to bridge on-chain and off-chain Bitcoin using submarine swaps.
+
+The service can be used in various situations:
+* Acquiring inbound channel liquidity from arbitrary nodes on the Lightning network
+* Depositing funds to a Bitcoin on-chain address without closing active channels
+* Paying to on-chain fallback addresses in the case of insufficient route liquidity
 
 ## Custodial Rebalancing
 
