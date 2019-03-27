@@ -123,6 +123,11 @@ unsafe-disconnect=1
 externalip=YOURIP
 ; set node alias (seen in explorers)
 alias=SET-YOUR-ALIAS
+; the workers require a recent master from end March 2019
+; https://github.com/lightningnetwork/lnd/pull/2736
+workers.read=100
+workers.write=100
+workers.sig=100
 
 [Bitcoin]
 bitcoin.active=1

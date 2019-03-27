@@ -103,6 +103,8 @@ minrelaytxfee=0.00000000
 incrementalrelayfee=0.00000010
 zmqpubrawblock=tcp://127.0.0.1:28332
 zmqpubrawtx=tcp://127.0.0.1:28333
+debug=mempool
+debug=rpc
 ```
 
 Start `bitcoind` to initiate sync, and be sure to take a look at https://en.bitcoin.it/wiki/Running_Bitcoin
