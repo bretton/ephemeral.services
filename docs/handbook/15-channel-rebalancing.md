@@ -121,3 +121,7 @@ The service can be used in various situations:
 ## General Tools with Rebalancing features
 
 Alex Bosworth has released [Balance of Satoshis](https://github.com/alexbosworth/balanceofsatoshis) which is a set of tools for working with Lightning balances.
+
+## LNToolkit
+
+[LNToolkit](https://lntoolkit.com/) provides a number of useful commands to help manage your node effectively.
