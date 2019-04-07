@@ -34,7 +34,7 @@ peers now also means you have unreliable backup partners, so choosing
 great peers could become even more important.
 ```
 
-To-do: update this with the new LND backup procedure once it goes live
+To-do: update this with the new LND backup procedure and associated helper scripts 
 
 ## Process
 
@@ -48,5 +48,7 @@ unlock wallet (optionally via API)
 ## Tools
 
 automating hourly backups and node restart & unlock
+
+* Alex Bosworth has a mechanism for automatic channel backups at [Backup channel.backup using inotify](https://gist.github.com/alexbosworth/2c5e185aedbdac45a03655b709e255a3)
 
 
