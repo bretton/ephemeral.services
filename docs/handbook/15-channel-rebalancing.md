@@ -103,6 +103,9 @@ And another project: [rebalance-lnd](https://github.com/C-Otto/rebalance-lnd) as
 ```
 cleanup on the rebalance-lnd tool by C-Otto, including more detailed examples in the README, merging in improvements (and a move to lnd-grpc) from @pierre_rochard, fixing some things to pin to lnd-grpc v0.2.5, adding a --chain litecoin flag to scale the visual channel bars properly on LTC, and adding a Pipfile for pipenv users.
 ```
+## lndmanage
+
+[lndmanage](https://github.com/bitromortac/lndmanage/) is a control tool for lightning network daemon (lnd) node operators, optimized for remote control.
 
 ## lightning loop
 
@@ -125,3 +128,4 @@ Alex Bosworth has released [Balance of Satoshis](https://github.com/alexbosworth
 ## LNToolkit
 
 [LNToolkit](https://lntoolkit.com/) provides a number of useful commands to help manage your node effectively.
+
