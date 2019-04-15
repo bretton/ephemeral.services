@@ -129,3 +129,6 @@ Alex Bosworth has released [Balance of Satoshis](https://github.com/alexbosworth
 
 [LNToolkit](https://lntoolkit.com/) provides a number of useful commands to help manage your node effectively.
 
+## LND assistant
+
+[LND assistant](https://github.com/dlaptev/lnd_assistant) useful scripts for lnd.
