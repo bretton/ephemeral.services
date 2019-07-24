@@ -28,6 +28,12 @@ The following reference material for LND may be relevant to this chapter
 * https://github.com/lightningnetwork/lnd/issues/1243
 * https://github.com/lightningnetwork/lnd/pull/1355
 
+### LNDMON
+
+[LNDMON](https://github.com/lightninglabs/lndmon) is a drop-in monitoring solution for your lnd node using Prometheus and Grafana.
+
+See the [blog post](https://blog.lightning.engineering/posts/2019/07/24/lndmon-v0.1.html) for more details.
+
 ## Splunk
 
 To-do: Retrieval of information and input into [Splunk](https://www.splunk.com)
