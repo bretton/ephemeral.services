@@ -6,7 +6,13 @@ To-do: needs massive expansion for all the scripts, several possibilities
 
 Reference:
 * [Alex Bosworth - Lightning channel Management](https://www.youtube.com/watch?v=HlPIB6jt6ww)
-
+* [Alex Bosworth tweet](https://twitter.com/alexbosworth/status/1154768981204406273)
+```
+If you are running a merchant Lightning node, you should recognize that your customers will
+need to find a path to you. For this reason you should be removing or rebalancing public
+peers that don't have liquidity towards you. They create errors and delays when customers
+go to pay
+```
 
 ## Romperts Channel Rebalancer
 
