@@ -46,3 +46,5 @@ If you wish to contribute, please review the [Style Guide](docs/styleguide/00-st
 * Author: Bretton Vine (https://github.com/bretton)
 
 ## License
+
+to-do: add licence, probably MIT
