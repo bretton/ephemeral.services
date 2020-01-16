@@ -4,7 +4,7 @@
 
 <del>To-do: add basic firewall rules to allow bitcoin and LN nodes to communicate</del>
 
-Looks like there is a good starting [Alex Bosworth's Run LND documentation]](https://github.com/alexbosworth/run-lnd)
+Looks like there is a good starting [Alex Bosworth's Run LND documentation](https://github.com/alexbosworth/run-lnd)
 
 >  Setup a local firewall:
 > ```
@@ -21,7 +21,7 @@ Looks like there is a good starting [Alex Bosworth's Run LND documentation]](htt
 
 <del>To-do: add ufw rate-limiting rules in pre.rules</del>
 
-Again, from [Alex Bosworth's Run LND documentation]](https://github.com/alexbosworth/run-lnd)
+Again, from [Alex Bosworth's Run LND documentation](https://github.com/alexbosworth/run-lnd)
 
 > Setup network flood protection:
 > ````
